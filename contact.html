@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" id="logo">
+        <h1>SAMSON'S TASTY TREATS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Cantimawa Street, Burauen, Leyte</p>
+                <p><strong>Contact Number:</strong> +639704523087</p>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/jerz.zerwix">Samson's Tasty Treats</a></p>
+            </div>
+            <form action="#" method="POST" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+
+                <div id="error" class="error"></div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Samson's Tasty Treats</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
